@@ -1,0 +1,19 @@
+name: RSS Feed to Readme
+
+on:
+  on:
+    schedule:
+      - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  convert_feeds:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: sarisia/actions-readme-feed@v1
+        with:
+          url: 'https://weyprecht.de/feed/'
+          file: 'README.md'
+      - uses: sarisia/actions-commit@master
