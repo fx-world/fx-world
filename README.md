@@ -8,5 +8,5 @@ My name is Pascal Weyprecht and I am a freelance software engineer from Dresden,
 
 ### Latest posts on [Weyprecht.de](https://weyprecht.de/)
 
-<!-- feed start -->
-<!-- feed end -->
+<!--START_SECTION:feed-->
+<!--END_SECTION:feed-->
