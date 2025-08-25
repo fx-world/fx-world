@@ -10,9 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
-      - uses: sarisia/actions-readme-feed@v1
+      - uses: JasonEtco/rss-to-readme@v2
         with:
-          url: 'https://weyprecht.de/feed/'
-          file: 'README.md'
-      - uses: sarisia/actions-commit@master
+          feed-url: https://weyprecht.de/feed/
+          readme-section: feed
+          empty-commits: false
